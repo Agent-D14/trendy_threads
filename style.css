@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Antique_Wonders";
+    src: url(Antique_Wonders.ttf);
+}
+@font-face {
+    font-family: "Neon80";
+    src: url(Neon.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(246,190,78);
+background: linear-gradient(153deg, rgba(246,190,78,1) 0%, rgba(244,154,189,1) 100%);
+}
+.graphic{
+    background-image: url(images/StyleSwapLogo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#background{
+    background-image: url(images/StyleSwapLogo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* position: absolute;
+    z-index: 1;
+    width: 1000px;
+    height: 50%;
+    margin-top: -400px;*/
+}
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+#logo{
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+}
+.menu{
+    z-index: 5;
+    position: relative;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1020px;
+
+}
+.menu > li{
+    list-style: none;
+    color: black;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Neon80;
+}
+.menu > li:first-child{
+    color: white;
+}
+.menu > li:last-child{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 11px;
+    color: black;
+    background-color: #f6be4e;
+    font-family: Antique_Wonders;
+}
