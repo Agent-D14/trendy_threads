@@ -31,17 +31,30 @@ nav{
     color: black;
     padding: 20px;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Neon80;
 }
 .menu a:first-child{
     color: orangered;
 }
 .menu a:last-child{
     border: 2px solid black;
-    background-color: aquamarine;
+    background-color: #f6be4e;
     border-radius: 30px;
     margin-bottom: 55px;
     padding: 9px 25px 9px 25px;
+    font-family: Antique_Wonders;
+}
+.menu a:last-child:hover{
+    background-color: #fbdda0;
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px; 
+}
+#check{
+    display: none;
 }
 
 /*Hero section*/
@@ -78,6 +91,7 @@ p{
     background-color: white;
     border-radius: 30px;
     margin-bottom: 55px;
+    font-family: Antique_Wonders;
     font-size: 20px;
     padding: 10px 50px 10px 50px;
 }
@@ -91,7 +105,8 @@ p{
 .content h2{
     display: flex;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Antique_Wonders;
+    color: #f16143;
     font-size: 45px;
     margin: 30px;
 }
@@ -120,7 +135,7 @@ hr.solid {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Neon80;
     font-size: 24px;
 }
 .other p{
@@ -135,11 +150,9 @@ hr.solid {
     padding-bottom: 100px;
 }
 .locations img{
-    border: 2px solid black;
-    background-color: aqua;
     width: 100px;
     height: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
     
 }
 
@@ -152,6 +165,28 @@ hr.solid {
     background: linear-gradient(153deg, rgba(246,190,78,1) 0%, rgba(244,154,189,1) 100%);
     align-items: center;
     justify-content: center;
+}
+@media screen and (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        right: -20px;
+        height: 92vh;
+        top: -10px;
+        background-color: pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 40%;
+        transform: translateX(100%);
+    }
+    #check:checked ~ a{
+        left: 0;
+    
+    }
 }
 
 
