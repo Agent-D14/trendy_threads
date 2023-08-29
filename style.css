@@ -93,6 +93,11 @@ nav{
 .col1 img{
     width: 300px;
 }
+@media(max-width:768px){
+    .col1 img{
+        width:200px;
+    }
+}
 .col3 button{
     border: 1px solid black;
     background-color: white;
