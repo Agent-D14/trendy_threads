@@ -313,25 +313,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-/*Footer
-.footer{
-    position: absolute;
-    bottom: 0%;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 90px;
-    display: flex;
-    background: rgb(246,190,78);
-    background: linear-gradient(153deg, rgba(246,190,78,1) 0%, rgba(244,154,189,1) 100%);
-    align-items: center;
-    justify-content: center;
-}
-.footer p{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}*/
 
 
 
