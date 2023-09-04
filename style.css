@@ -11,6 +11,9 @@
     padding: 0;
 }
 body{
+    position: relative;
+    min-height: 100%;
+    overflow-x: hidden;
 }
 /*Navigation Bar*/
 
@@ -79,6 +82,14 @@ nav{
     right: 0;
     bottom: 0;
     text-align: center;
+}
+.header h3{
+    font-size: 20px;
+    margin-top: -20px;
+}
+.header p{
+    font-size: 40px;
+    font-weight: 200;
 }
 .col1 img{
     width: 300px;
@@ -206,21 +217,30 @@ nav{
 .info-container{
     position: absolute;
     top: 800px;
-    left: 10%;
+    left: 20%;
+    margin-top: 30px;
+}
+#info-overview{
+    margin-top: 50px;
+    padding-right: 100px;
+}
+.info-container h2{
+    font-family: Neon80;
 }
 .steps-container{
     position: absolute;
     top: 1250px;
     left: 100px;
     display: inline-block;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
     text-align: center;
 }
-.steps-container h2{
-    font-family: Antique Wonders;
-    color: orangered;
+
+.steps-container .row{
+    justify-content: center;
+}
+.steps-container h1{
+    font-family: Neon80;
+    color: rgb(245, 88, 31);
     text-align: center;
 }
 .steps-container img{
@@ -233,19 +253,29 @@ hr.solid {
     border-radius: 5px;
     margin: 50px 80px 50px 80px;
     opacity: 30%;
+    width: 80vw;
   }
 
 /*Alternatives*/
-.other h3{
+.other{
+    position: absolute;
+    top: 1600px;
+    left: 100px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+
+}
+.other p, .other h3{
     display: flex;
     justify-content: center;
+}
+.other h3{
     margin-top: 100px;
     font-family: Neon80;
     font-size: 24px;
 }
 .other p{
-    display: flex;
-    justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 40px;
 }
@@ -258,12 +288,29 @@ hr.solid {
 .locations img{
     width: 100px;
     height: 50px;
-    margin-left: 100px;
+    margin-left: 240px;
     
 }
-
-/*Footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    right: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: aquamarine;
+    text-align: center;
+    background: rgb(246,190,78);
+    background: linear-gradient(153deg, rgba(246,190,78,1) 0%, rgba(244,154,189,1) 100%);
+    align-items: center;
+    justify-content: center;
+}
+/*Footer
 .footer{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 90px;
     display: flex;
@@ -272,27 +319,11 @@ hr.solid {
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width:768px){
-    .checkbtn{
-        display: block;
-    }
-    .menu{
-        position: absolute;
-        right: -20px;
-        height: 92vh;
-        top: -10px;
-        background-color: pink;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        width: 40%;
-        transform: translateX(100%);
-    }
-    #check:checked ~ a{
-        left: 0;
-    
-    }
-}
+.footer p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}*/
+
 
 
