@@ -113,7 +113,7 @@ nav{
 }
 .col3 button:hover{
     cursor: pointer;
-    background-color: rgb(196, 198, 255);
+    background-color: antiquewhite;
 }
 .col2 h3{
     font-family: Neon80;
@@ -148,12 +148,20 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%) scale(1.25);
     width: 250px;
-    height: 100px;
+    height: 150px;
     padding: 20px 30px;
-    background: rgb(164, 124, 124);
+    background: white;
     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
     border-radius: 10px;
     z-index: 200;
+}
+#popup2 h4{
+    font-size: 20px;
+    text-align: center;
+}
+#popup2 p{
+    font-size: 10px;
+    text-align: center;
 }
 
 #popupclose, #popupclose2 {
@@ -201,7 +209,8 @@ nav{
     border: none;
     outline: none;
     font-size: 15px;
-    background: #222;
+    background: #f6be4e;
+    color: black;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -298,7 +307,6 @@ footer{
     right: 0;
     width: 100vw;
     height: 80px;
-    background-color: aquamarine;
     text-align: center;
     background: rgb(246,190,78);
     background: linear-gradient(153deg, rgba(246,190,78,1) 0%, rgba(244,154,189,1) 100%);
